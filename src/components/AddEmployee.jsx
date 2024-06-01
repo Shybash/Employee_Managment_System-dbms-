@@ -33,7 +33,7 @@ const AddEmployee = () => {
     };
 
     // Make a POST request to the backend to add the employee
-    axios.post('http://localhost:3000/api/employees', newEmployee)
+    axios.post('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/employees', newEmployee)
       .then(response => {
         setMessage('Employee added successfully');
         // Reset the form after successful addition
