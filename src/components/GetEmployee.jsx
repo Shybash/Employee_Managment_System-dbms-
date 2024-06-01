@@ -23,7 +23,7 @@ const GetEmployee = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/employees/${id}`);
+      await axios.delete(`https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/employees/${id}`);
       // Remove the deleted employee from the local state
       setEmployees(employees.filter(employee => employee.id !== id));
     } catch (error) {

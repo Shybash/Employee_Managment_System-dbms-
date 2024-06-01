@@ -10,7 +10,7 @@ const Transaction = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/getemployees')
+    axios.get('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/getemployees')
       .then(response => {
         setEmployees(response.data);
       })
