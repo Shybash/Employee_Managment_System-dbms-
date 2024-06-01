@@ -11,7 +11,7 @@ const Category = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/categories')
+    axios.get('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/categories')
       .then(response => {
         setCategories(response.data);
       })
