@@ -12,7 +12,7 @@ const AddEmployee = () => {
 
   useEffect(() => {
     // Fetch categories from the backend
-    axios.get('http://localhost:3000/api/categories')
+    axios.get('https://backend-mysql-one.vercel.app/api/categories')
       .then(response => {
         setCategories(response.data);
       })
@@ -33,7 +33,7 @@ const AddEmployee = () => {
     };
 
     // Make a POST request to the backend to add the employee
-    axios.post('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/employees', newEmployee)
+    axios.post('https://backend-mysql-one.vercel.app/api/employees', newEmployee)
       .then(response => {
         setMessage('Employee added successfully');
         // Reset the form after successful addition

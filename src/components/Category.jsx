@@ -23,7 +23,7 @@ const Category = () => {
   const handleAddCategory = (e) => {
     e.preventDefault();
 
-    axios.post('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/categories', { name: categoryName })
+    axios.post('https://backend-mysql-one.vercel.app/api/categories', { name: categoryName })
       .then(response => {
         setCategories([...categories, response.data]);
         setCategoryName('');

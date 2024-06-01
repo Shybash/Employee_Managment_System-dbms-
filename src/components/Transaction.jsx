@@ -10,7 +10,7 @@ const Transaction = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/getemployees')
+    axios.get('https://backend-mysql-one.vercel.app/api/getemployees')
       .then(response => {
         setEmployees(response.data);
       })
@@ -28,7 +28,7 @@ const Transaction = () => {
       type: transactionType
     };
 
-    axios.post('http://localhost:3000/api/transactions', newTransaction)
+    axios.post('https://backend-mysql-one.vercel.app/api/transactions', newTransaction)
       .then(response => {
         setMessage('Transaction successful');
         setEmployeeId('');

@@ -9,7 +9,7 @@ const Dashboard = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/countEmp')
+    axios.get('https://backend-mysql-one.vercel.app/api/countEmp')
       .then(response => {
         setTotalEmployees(response.data.count);
       })
@@ -17,7 +17,7 @@ const Dashboard = () => {
         setError('Error fetching employees count: ' + error.message);
       });
 
-      axios.get('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/countTrans')
+      axios.get('https://backend-mysql-one.vercel.app/api/countTrans')
       .then(response => {
         setTotalTransactions(response.data.total_amount);
       })
@@ -26,7 +26,7 @@ const Dashboard = () => {
       });
     
 
-    axios.get('https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/countCat')
+    axios.get('https://backend-mysql-one.vercel.app/api/countCat')
       .then(response => {
         setTotalCategories(response.data.count);
       })

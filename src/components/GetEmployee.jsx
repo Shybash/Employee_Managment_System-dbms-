@@ -10,7 +10,7 @@ const GetEmployee = () => {
 
   useEffect(() => {
     // Fetch employee data from the backend
-    axios.get('http://localhost:3000/api/getemployees')
+    axios.get('https://backend-mysql-one.vercel.app/api/getemployees')
       .then(response => {
         setEmployees(response.data);
         setLoading(false);
@@ -23,7 +23,7 @@ const GetEmployee = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://backend-mysql-hkfrutwyi-shybash-shaiks-projects.vercel.app/api/employees/${id}`);
+      await axios.delete(`https://backend-mysql-one.vercel.app/api/employees/${id}`);
       // Remove the deleted employee from the local state
       setEmployees(employees.filter(employee => employee.id !== id));
     } catch (error) {
