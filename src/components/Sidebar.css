@@ -1,0 +1,61 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    background-color: #34495e;
+    text-align: center;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .sidebar-item {
+    border-bottom: 1px solid #34495e;
+  }
+  
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  .sidebar-link:hover {
+    background-color: #1abc9c;
+    color: #fff;
+  }
+  
+  .icon-dashboard:before,
+  .icon-user:before,
+  .icon-category:before,
+  .icon-profile:before,
+  .icon-settings:before,
+  .icon-reports:before,
+  .icon-logout:before {
+    font-family: "FontAwesome";
+    margin-right: 10px;
+  }
+  
+  .icon-dashboard:before { content: "\f0e4"; }
+  .icon-user:before { content: "\f007"; }
+  .icon-category:before { content: "\f02c"; }
+  .icon-profile:before { content: "\f2bd"; }
+  .icon-settings:before { content: "\f013"; }
+  .icon-reports:before { content: "\f201"; }
+  .icon-logout:before { content: "\f08b"; }
+  

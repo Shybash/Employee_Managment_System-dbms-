@@ -1,0 +1,67 @@
+/* Container for the employee list */
+.employee-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading style */
+  .employee-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+  }
+  
+  /* Loading and error message style */
+  .employee-container p {
+    text-align: center;
+    color: #34495e;
+  }
+  
+  /* Error message style */
+  .employee-container .error {
+    color: #e74c3c;
+  }
+  .add-employee-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  
+  /* Employee table style */
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .employee-table th, .employee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .employee-table th {
+    background-color: #34495e;
+    color: white;
+  }
+  
+  .employee-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .employee-table tr:hover {
+    background-color: #ddd;
+  }
+  

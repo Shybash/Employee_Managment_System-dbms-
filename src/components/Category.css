@@ -1,0 +1,95 @@
+/* Category.css */
+
+.category-container {
+    padding: 30px;
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 260px; /* Adjusted for sidebar alignment */
+    margin-top: 30px;
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+
+
+.category-container h2 {
+    margin-bottom: 25px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+
+.category-container form {
+    margin-bottom: 25px;
+}
+
+.category-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.category-container input {
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.category-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.category-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.category-container .category-list {
+    margin-top: 30px;
+}
+
+.category-container .category-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-container .category-list li {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.category-container .category-list li:hover {
+    background-color: #f1f1f1;
+    transform: translateX(5px);
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
