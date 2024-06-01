@@ -51,11 +51,3 @@
     margin-right: 10px;
   }
   
-  .icon-dashboard:before { content: "\f0e4"; }
-  .icon-user:before { content: "\f007"; }
-  .icon-category:before { content: "\f02c"; }
-  .icon-profile:before { content: "\f2bd"; }
-  .icon-settings:before { content: "\f013"; }
-  .icon-reports:before { content: "\f201"; }
-  .icon-logout:before { content: "\f08b"; }
-  
